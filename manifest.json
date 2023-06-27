@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Episode Autosave",
+    "version": "1.0",
+    "description": "Description of your extension",
+    "icons": {
+        "16": "episode.png",
+        "48": "episode.png",
+        "128": "episode.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["autosave.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "permissions": ["activeTab"]
+}
